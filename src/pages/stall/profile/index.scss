@@ -1,0 +1,16 @@
+.stall-profile { padding-bottom: 110px; }
+.stall-profile__hero { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; padding: 18px 6px; }
+.stall-profile__avatar { width: 62px; height: 62px; }
+.stall-profile__name { display: block; margin-bottom: 5px; font-family: 'Songti SC', 'STSong', serif; font-size: 22px; font-weight: 700; }
+.stall-profile__stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 18px; padding: 21px 6px; border: 1px solid var(--yg-line); border-radius: 12px; background: var(--yg-card); text-align: center; }
+.stall-profile__stats text { display: block; }
+.stall-profile__stats .red { color: var(--yg-red); }
+.stall-profile__review { border-left: 7px solid var(--yg-green); }
+.stall-profile__review.has-pending { border-left-color: var(--yg-red); }
+.stall-profile__review text { display: block; }
+.stall-profile__badge { min-width: 30px; padding: 5px 8px; border-radius: 999px; background: var(--yg-red); color: #fff; text-align: center; font-weight: 700; }
+.stall-profile__badge.empty { background: #e6e0d5; color: var(--yg-sub); }
+.stall-profile__pending { margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--yg-line); }
+.stall-profile__menu-item { min-height: 54px; padding: 9px 0; border-bottom: 1px solid var(--yg-line); }
+.stall-profile__menu-item:last-child { border-bottom: 0; }
+.stall-profile__menu-item text { display: block; }

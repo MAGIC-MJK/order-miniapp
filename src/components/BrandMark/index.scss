@@ -1,0 +1,18 @@
+.brand-mark {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  overflow: hidden;
+  border: 1px solid rgba(205, 187, 150, .72);
+  border-radius: 13px;
+  background: var(--yg-ink-deep);
+  box-shadow: 0 4px 12px rgba(13, 55, 43, .16);
+}
+
+.brand-mark__image { display: block; width: 100%; height: 100%; }
+
+.brand-mark--compact { width: 42px; height: 42px; }
+.brand-mark--seal { width: 128px; height: 128px; border: 2px solid #cdbb96; border-radius: 28px; box-shadow: 0 16px 40px rgba(13, 55, 43, .2); }

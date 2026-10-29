@@ -1,0 +1,42 @@
+.listing-page__import { margin-bottom: 16px; padding: 20px; border: 1px solid #b9cbbb; border-radius: 12px; background: #edf2e9; }
+.listing-page__import-title { display: block; margin-bottom: 4px; font-weight: 600; }
+.listing-page__import button { flex: none; margin: 0 0 0 16px; padding: 0 18px; border-radius: 8px; background: var(--yg-ink); color: #fff8e9; font-size: 12px; line-height: 48px; }
+.listing-toolbar { display: flex; align-items: center; gap: 12px; }
+.listing-toolbar .search-box { flex: 1; min-width: 0; }
+.listing-view-switch { display: flex; flex: none; overflow: hidden; border: 1px solid var(--yg-line); border-radius: 9px; background: var(--yg-card); }
+.listing-view-switch text { padding: 12px 14px; color: var(--yg-sub); font-size: 11px; }
+.listing-view-switch text.active { background: var(--yg-ink); color: #fff8e9; }
+.listing-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+.listing-item { display: flex; gap: 18px; }
+.listing-item__photo { flex: none; width: 132px; height: 154px; border-radius: 10px; }
+.listing-item__name { max-width: 250px; font-weight: 600; }
+.listing-item__stock { display: block; margin-top: 10px; }
+.listing-item__actions { gap: 10px; margin-top: 12px; }
+.listing-grid--double { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.listing-grid--double .listing-item { display: block; min-width: 0; padding: 12px; }
+.listing-grid--double .listing-item__photo { width: 100%; height: 230px; margin-bottom: 10px; }
+.listing-grid--double .listing-item__name { display: block; max-width: none; min-height: 44px; font-size: 13px; line-height: 1.45; }
+.listing-grid--double .listing-item .row.between { display: block; }
+.listing-grid--double .listing-item .row.between .pill { display: inline-block; margin-top: 7px; }
+.listing-grid--double .listing-item__stock { font-size: 11px; line-height: 1.5; }
+.listing-grid--double .listing-item__actions { flex-wrap: wrap; gap: 6px; }
+.fab { position: fixed; z-index: 50; right: 30px; bottom: 130px; width: 48px; height: 48px; padding: 0; border: 2px solid #e7d8bb; border-radius: 50%; background: var(--yg-red); color: #fff8e9; font-size: 24px; line-height: 44px; box-shadow: 0 4px 12px rgba(112, 41, 35, .24); }
+.listing-sheet { overflow-y: auto; }
+.listing-sheet__photo-title { display: flex; align-items: baseline; justify-content: space-between; margin-top: 22px; font-weight: 600; }
+.listing-sheet__photo-title > text { color: var(--yg-sub); font-size: 11px; font-weight: 400; }
+.listing-sheet__photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 12px 0 22px; }
+.listing-sheet__photo,
+.listing-sheet__photo-add { position: relative; height: 156px; overflow: hidden; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-card); }
+.listing-sheet__photo image { width: 100%; height: 116px; background: #f7f2e8; }
+.listing-sheet__photo-type { position: absolute; top: 7px; left: 7px; padding: 3px 7px; border-radius: 5px; background: rgba(18, 63, 50, .86); color: #fff8e9; font-size: 9px; }
+.listing-sheet__photo-actions { display: flex; height: 40px; border-top: 1px solid var(--yg-line); }
+.listing-sheet__photo-actions text { display: flex; flex: 1; align-items: center; justify-content: center; color: var(--yg-ink); font-size: 11px; }
+.listing-sheet__photo-actions text + text { border-left: 1px solid var(--yg-line); color: var(--yg-red); }
+.listing-sheet__photo-add { display: flex; flex-direction: column; align-items: center; justify-content: center; border-style: dashed; background: var(--yg-paper-deep); color: var(--yg-sub); }
+.listing-sheet__photo-add text:first-child { color: var(--yg-ink); font-size: 28px; font-weight: 300; line-height: 1; }
+.listing-sheet__photo-add text:last-child { margin-top: 8px; font-size: 11px; }
+.listing-sheet__field { margin-bottom: 12px; padding: 18px; border: 1px solid var(--yg-line); border-radius: 9px; background: var(--yg-card); }
+.listing-sheet__field text { width: 92px; flex: none; color: var(--yg-sub); }
+.listing-sheet__field input { flex: 1; min-width: 0; margin-left: 14px; text-align: right; }
+.listing-sheet__footer { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.4fr); gap: 12px; margin-top: 18px; }
+.listing-sheet__footer > button:only-child { grid-column: 1 / -1; }

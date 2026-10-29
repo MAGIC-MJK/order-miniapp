@@ -1,0 +1,14 @@
+{
+  "name": "yangge-local-import-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "once": "node index.mjs --once",
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "@cloudbase/node-sdk": "3.18.3",
+    "puppeteer-core": "25.8.0"
+  }
+}

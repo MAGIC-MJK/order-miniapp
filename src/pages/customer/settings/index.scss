@@ -1,0 +1,7 @@
+.settings-list { overflow: hidden; }
+.settings-row { min-height: 62px; border-bottom: 1px solid var(--yg-line); }
+.settings-row:last-child { border-bottom: 0; }
+.settings-row .sub { display: block; margin-top: 4px; }
+.settings-copy { display: block; margin: 18px 0; line-height: 1.8; }
+.settings-task .sub, .settings-task .mini { display: block; margin-top: 10px; }
+.pill.red { background: #f8e5e1; color: var(--yg-red); }

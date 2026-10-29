@@ -1,0 +1,29 @@
+.date-wheel { margin-bottom: 10px; padding: 10px 16px; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-card); text-align: center; }
+.date-wheel__label { display: block; font-size: 16px; font-weight: 600; }
+.batch-overview__actions, .pending-order__actions { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin-top: 12px; }
+.batch-overview__actions .ghost-btn, .pending-order__actions button { min-height: 44px; margin: 0; padding: 0 8px; font-size: 12px; }
+.pending-order__actions .primary-btn:last-child { grid-column: 1 / -1; }
+.detail-card .title { font-size: 17px; }
+.detail-item { display: flex; align-items: center; gap: 10px; margin-top: 0; padding: 10px 0; border-bottom: 1px solid var(--yg-line); }
+.detail-item:last-of-type { border-bottom: 0; }
+.detail-item__image { flex: none; width: 72px; height: 84px; border-radius: 8px; }
+.detail-item__name { display: block; margin-bottom: 4px; font-size: 13px; line-height: 1.35; font-weight: 600; }
+.detail-item .grow { min-width: 0; }
+.detail-item .sub { display: block; font-size: 11px; }
+.detail-item__price { display: flex; flex: none; flex-direction: column; align-items: flex-end; min-width: 74px; font-size: 12px; font-variant-numeric: tabular-nums; }
+.detail-item__price .mini { text-align: right; }
+.detail-item__total { margin-top: 4px; color: var(--yg-ink); font-size: 14px; font-weight: 700; }
+.detail-item__old-price { color: var(--yg-sub); font-size: 12px; text-decoration: line-through; }
+.empty-hint { display: block; padding: 32px 0; color: var(--yg-sub); text-align: center; }
+.ledger-card .title { font-size: 17px; }
+.ledger-card__heading { display: block; margin-bottom: 12px; }
+.ledger-card .row { min-height: 30px; font-variant-numeric: tabular-nums; }
+.ledger-card .row:last-child { padding-top: 8px; color: var(--yg-ink); font-weight: 700; }
+.ledger-card .divider { margin: 7px 0; }
+.export-card__title { display: block; margin-bottom: 6px; }
+.export-card__button { margin: 0; padding: 0 14px; border-radius: 8px; background: var(--yg-ink); color: #fff8e9; font-size: 12px; line-height: 44px; }
+.progress { height: 10px; margin: 18px 0; overflow: hidden; border-radius: 6px; background: var(--yg-paper-deep); }
+.progress__value { width: 67%; height: 100%; border-radius: 6px; background: var(--yg-gold); }
+.pending-order { margin-bottom: 10px; }
+.pending-order__line { display: flex; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--yg-line); }
+.pending-order__line:last-child { border-bottom: 0; }

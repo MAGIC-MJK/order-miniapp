@@ -1,0 +1,24 @@
+.cart-page { padding-bottom: 60px; }
+.cart-page__summary { margin-bottom: 18px; }
+.cart-item { display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--yg-line); }
+.cart-item:first-child { padding-top: 0; }
+.cart-item:last-child { padding-bottom: 0; border-bottom: 0; }
+.cart-item__photo { flex: none; width: 104px; height: 120px; border-radius: 10px; }
+.cart-item__content { align-self: stretch; }
+.cart-item__head { align-items: flex-start; gap: 10px; }
+.cart-item__name { font-size: 16px; line-height: 1.4; font-weight: 600; }
+.cart-item__price { flex: none; line-height: 1.4; }
+.cart-item__spec { display: block; margin-top: 6px; }
+.cart-item__footer { flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.cart-item__footer .pill { min-height: 34px; padding: 0 10px; font-size: 10px; }
+.cart-item__quantity { flex: none; gap: 12px; margin-left: auto; font-weight: 600; }
+.cart-item__quantity text:first-child,
+.cart-item__quantity text:last-child { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--yg-line); border-radius: 7px; background: var(--yg-card); }
+.cart-page__total { border-color: #cbb98f; background: var(--yg-yellow-soft); }
+.cart-page__amount { font-size: 22px; }
+.cart-page__total .mini { display: block; margin-top: 8px; }
+.cart-mapping .search-box { margin-top: 20px; }
+.cart-mapping__item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--yg-line); }
+.cart-mapping__image { width: 66px; height: 82px; flex: none; }
+.cart-mapping__item .title { display: block; font-size: 14px; }
+.cart-mapping__item .sub { display: block; margin-top: 5px; }

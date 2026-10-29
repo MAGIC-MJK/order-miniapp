@@ -1,0 +1,12 @@
+.inventory-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 18px; padding: 20px 8px; border: 1px solid var(--yg-line); border-radius: 12px; background: var(--yg-card); text-align: center; }
+.inventory-stats text { display: block; }
+.inventory-card__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 18px 0; }
+.inventory-card__main { display: flex; align-items: center; gap: 14px; }
+.inventory-card__image { flex: none; width: 92px; height: 108px; border-radius: 9px; }
+.inventory-card__stats view { padding: 14px 6px; border: 1px solid #dfd4c3; border-radius: 8px; background: var(--yg-paper-deep); text-align: center; }
+.inventory-card__stats text { display: block; }
+.inventory-sheet__field { margin-top: 14px; padding: 18px; border: 1px solid var(--yg-line); border-radius: 9px; background: var(--yg-card); }
+.inventory-sheet__field text { width: 70px; flex: none; color: var(--yg-sub); }
+.inventory-sheet__field input { flex: 1; min-width: 0; margin-left: 14px; text-align: right; }
+.inventory-sheet__preview { margin-top: 18px; border-color: #cbb98f; background: var(--yg-yellow-soft); }
+.inventory-sheet__preview .row { margin: 10px 0; }

@@ -1,0 +1,28 @@
+{
+  "collections": [
+    "users",
+    "merchants",
+    "products",
+    "customer_prices",
+    "carts",
+    "orders",
+    "returns",
+    "bills",
+    "adjustments",
+    "inventory_logs",
+    "import_tasks",
+    "audit_logs"
+  ],
+  "indexes": [
+    { "collection": "products", "name": "status_updatedAt", "fields": [{ "field": "status", "direction": "asc" }, { "field": "updatedAt", "direction": "desc" }] },
+    { "collection": "products", "name": "code_unique", "unique": true, "fields": [{ "field": "code", "direction": "asc" }] },
+    { "collection": "orders", "name": "merchant_date", "fields": [{ "field": "merchantId", "direction": "asc" }, { "field": "dateKey", "direction": "desc" }] },
+    { "collection": "orders", "name": "merchant_createdAt", "fields": [{ "field": "merchantId", "direction": "asc" }, { "field": "createdAt", "direction": "desc" }] },
+    { "collection": "orders", "name": "status_createdAt", "fields": [{ "field": "status", "direction": "asc" }, { "field": "createdAt", "direction": "desc" }] },
+    { "collection": "returns", "name": "merchant_createdAt", "fields": [{ "field": "merchantId", "direction": "asc" }, { "field": "createdAt", "direction": "desc" }] },
+    { "collection": "bills", "name": "merchant_dateKey", "fields": [{ "field": "merchantId", "direction": "asc" }, { "field": "dateKey", "direction": "desc" }] },
+    { "collection": "import_tasks", "name": "status_createdAt", "fields": [{ "field": "status", "direction": "asc" }, { "field": "createdAt", "direction": "asc" }] },
+    { "collection": "import_tasks", "name": "owner_createdAt", "fields": [{ "field": "ownerOpenid", "direction": "asc" }, { "field": "createdAt", "direction": "desc" }] },
+    { "collection": "inventory_logs", "name": "product_createdAt", "fields": [{ "field": "productId", "direction": "asc" }, { "field": "createdAt", "direction": "desc" }] }
+  ]
+}

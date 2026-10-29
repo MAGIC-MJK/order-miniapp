@@ -1,0 +1,10 @@
+.profile-hero { position: relative; display: flex; align-items: center; gap: 20px; overflow: hidden; padding: 28px; border: 1px solid #52695d; border-radius: 14px; background: linear-gradient(125deg, #164839, var(--yg-ink-deep)); color: #fff7e8; }
+.profile-hero::after { position: absolute; right: -35px; bottom: -70px; width: 170px; height: 170px; border: 1px solid rgba(219, 197, 153, .2); border-radius: 50%; content: ''; }
+.profile-hero__avatar { display: flex; align-items: center; justify-content: center; width: 92px; height: 92px; }
+.profile-hero__avatar .brand-mark { width: 92px; height: 92px; border-color: rgba(241, 234, 217, .65); border-radius: 20px; box-shadow: none; }
+.profile-hero__name { display: block; font-size: 18px; line-height: 1.35; font-weight: 600; }
+.profile-hero__phone { display: block; margin-top: 8px; font-size: 12px; }
+.profile-stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: 18px 0; padding: 22px 8px; border: 1px solid var(--yg-line); border-radius: 14px; background: var(--yg-card); text-align: center; }
+.profile-stats__value { display: block; margin-bottom: 6px; font-size: 17px; font-weight: 600; }
+.profile-menu__item { padding: 20px 0; border-bottom: 1px solid var(--yg-line); }
+.profile-menu__item:last-child { border-bottom: 0; }

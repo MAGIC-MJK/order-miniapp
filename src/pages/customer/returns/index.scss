@@ -1,0 +1,23 @@
+.return-guide { border-left: 7px solid var(--yg-gold); }
+.return-guide .sub { display: block; margin-top: 8px; }
+.return-line { display: flex; align-items: center; gap: 14px; margin-top: 14px; padding: 12px; border: 1px solid var(--yg-line); border-radius: 10px; }
+.return-line.active { border-color: var(--yg-ink); background: var(--yg-yellow-soft); }
+.return-line__image { width: 70px; height: 82px; border-radius: 8px; }
+.return-line text { display: block; }
+.return-quantity { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--yg-line); }
+.return-step { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; margin: 0 14px; border: 1px solid var(--yg-line); border-radius: 8px; background: var(--yg-card); }
+.return-photos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+.return-photos image, .return-photo-add { width: 100%; aspect-ratio: 1; border-radius: 9px; }
+.return-photo-add { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0; padding: 0; border: 1px dashed var(--yg-gold); background: var(--yg-yellow-soft); color: var(--yg-ink); line-height: normal; }
+.return-photo-add::after { border: 0; }
+.return-photo-add > text:first-child { font-size: 26px; }
+.return-progress__steps { display: grid; grid-template-columns: repeat(4, 1fr); margin: 22px 0; }
+.return-progress__steps > view { position: relative; color: var(--yg-sub); text-align: center; font-size: 11px; }
+.return-progress__steps > view::before { position: absolute; z-index: 0; top: 15px; right: 50%; left: -50%; height: 2px; background: var(--yg-line); content: ''; }
+.return-progress__steps > view:first-child::before { display: none; }
+.return-progress__steps > view.active { color: var(--yg-green); }
+.return-progress__steps > view.active::before { background: var(--yg-green); }
+.return-progress__dot { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; width: 30px; height: 30px; margin: 0 auto 7px; border-radius: 50%; background: var(--yg-paper-deep); }
+.return-progress__steps > view.active .return-progress__dot { background: var(--yg-green); color: #fff; }
+.return-progress__line { display: flex; justify-content: space-between; padding: 14px 0; border-top: 1px solid var(--yg-line); }
+.return-progress > .mini { display: block; margin-top: 12px; }

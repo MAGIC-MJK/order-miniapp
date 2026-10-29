@@ -1,0 +1,39 @@
+.pattern-story { padding-bottom: 12px; }
+.pattern-story__header { margin-bottom: 18px; }
+.pattern-story__back { min-height: 44px; color: var(--yg-ink); font-size: 13px; line-height: 44px; }
+.pattern-story__confidence { padding: 7px 10px; border-radius: 6px; background: var(--yg-paper-deep); color: var(--yg-sub); font-size: 10px; }
+
+.pattern-story__visual { position: relative; height: 330px; overflow: hidden; border: 1px solid var(--yg-line); border-radius: 12px; background: var(--yg-paper-deep); transition: box-shadow .25s ease; }
+.pattern-story__visual.is-focused { box-shadow: 0 18px 42px rgba(37, 29, 19, .22); }
+.pattern-story__photo { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; background: #f3ecdf; }
+.pattern-story__empty { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: var(--yg-sub); }
+.pattern-story__hotspot { position: absolute; z-index: 2; display: flex; align-items: center; justify-content: center; width: 38px; height: 38px; border: 2px solid #fff8e9; border-radius: 50%; background: rgba(7, 59, 45, .88); color: #fff8e9; font-size: 12px; font-weight: 700; transform: translate(-50%, -50%); box-shadow: 0 0 0 0 rgba(7, 59, 45, .4); animation: pattern-hotspot-pulse 1.8s infinite; }
+.pattern-story__hotspot:nth-of-type(2) { animation-delay: .55s; }
+.pattern-story__visual.is-focused .pattern-story__hotspot { opacity: 0; pointer-events: none; }
+.pattern-story__mask { position: absolute; z-index: 3; inset: 0; background: rgba(25, 24, 20, .6); }
+.pattern-story__magnifier { position: absolute; z-index: 4; width: 180px; height: 180px; overflow: visible; border: 4px solid #f5e4bc; border-radius: 50%; background: var(--yg-paper-deep); transform: translate(-50%, -50%); box-shadow: 0 18px 44px rgba(0, 0, 0, .36), inset 0 0 0 2px rgba(161, 60, 52, .65); animation: pattern-focus-in .3s cubic-bezier(.18, .86, .3, 1); }
+.pattern-story__magnifier::before { position: absolute; z-index: 2; inset: 0; border-radius: 50%; box-shadow: inset 0 0 18px rgba(24, 20, 16, .15); content: ''; pointer-events: none; }
+.pattern-story__magnifier-clip { position: absolute; inset: 0; overflow: hidden; border-radius: 50%; }
+.pattern-story__magnified-photo { position: absolute; width: 240%; height: 240%; max-width: none; max-height: none; }
+.pattern-story__zoom-label { position: absolute; z-index: 3; bottom: -58px; left: 50%; padding: 8px 14px; border-radius: 6px; background: var(--yg-ink); color: #fff8e9; font-size: 10px; white-space: nowrap; transform: translateX(-50%); }
+.pattern-story__close-focus { position: absolute; z-index: 5; top: 14px; right: 14px; padding: 9px 12px; border: 1px solid rgba(245, 228, 188, .7); border-radius: 6px; background: var(--yg-ink); color: #fff8e9; font-size: 10px; }
+.pattern-story__caption { position: absolute; z-index: 5; right: 14px; bottom: 12px; left: 14px; color: #fff8e9; font-size: 10px; text-shadow: 0 1px 3px rgba(0, 0, 0, .75); }
+
+.pattern-story__copy { margin-top: 14px; padding: 18px; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-card); }
+.pattern-story__title { font-family: 'Songti SC', 'STSong', serif; font-size: 18px; font-weight: 700; letter-spacing: 1px; }
+.pattern-story__mood { color: var(--yg-red); font-size: 11px; }
+.pattern-story__label { display: block; margin-top: 13px; color: var(--yg-sub); font-size: 10px; }
+.pattern-story__paragraph { display: block; margin-top: 4px; font-size: 12px; line-height: 1.65; }
+.pattern-story__selling { margin-top: 14px; padding: 12px; border-radius: 7px; background: var(--yg-paper-deep); font-size: 11px; }
+.pattern-story__selling text:last-child { color: var(--yg-red); font-weight: 600; }
+.pattern-story__disclaimer { display: block; margin-top: 12px; color: var(--yg-sub); font-size: 9px; line-height: 1.55; }
+
+@keyframes pattern-hotspot-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(7, 59, 45, .42); }
+  70% { box-shadow: 0 0 0 14px rgba(7, 59, 45, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(7, 59, 45, 0); }
+}
+@keyframes pattern-focus-in {
+  from { opacity: 0; transform: translate(-50%, -50%) scale(.4); }
+  to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+}

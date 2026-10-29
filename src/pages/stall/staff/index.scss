@@ -1,0 +1,7 @@
+.staff-management__tabs { display: flex; gap: 6px; margin: 12px 0; font-size: 13px; }
+.staff-management__tabs > view { flex: 1; padding: 10px 2px; text-align: center; background: var(--yg-card); border-radius: 8px; }
+.staff-management__tabs .active { background: var(--yg-green); color: #fff; }
+.staff-management__phone { display: block; margin: 8px 0; color: var(--yg-sub); }
+.staff-management__billing { padding: 10px 0; border-top: 1px solid var(--yg-line); font-size: 13px; }
+.staff-management__buttons { display: flex; gap: 8px; margin-top: 10px; }
+.staff-management__buttons button { flex: 1; margin: 0; font-size: 14px; }

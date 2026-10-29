@@ -1,0 +1,89 @@
+.customer-order { padding-bottom: 126px; }
+.customer-order__brandline { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 32px; margin-bottom: 8px; color: var(--yg-ink); }
+.customer-order__brandline text:first-child { overflow: hidden; font-family: 'Songti SC', 'STSong', serif; font-size: 12px; font-weight: 700; text-overflow: ellipsis; white-space: nowrap; }
+.customer-order__brandline text:last-child { flex: none; color: var(--yg-sub); font-size: 10px; }
+.spec-sheet { height: 72vh; }
+.spec-sheet__close { min-width: 44px; min-height: 44px; text-align: right; font-size: 22px; line-height: 44px; }
+.import-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.import-card { position: relative; overflow: hidden; min-height: 58px; padding: 7px 10px; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-paper-deep); }
+.import-card::after { position: absolute; right: -18px; bottom: -26px; width: 70px; height: 70px; border: 1px solid rgba(112, 91, 60, .09); border-radius: 50%; content: ''; }
+.import-card__icon { display: inline-block; margin-right: 5px; color: var(--yg-red); font-family: 'Songti SC', 'STSong', serif; font-size: 15px; font-weight: 700; }
+.import-card__title { display: inline-block; font-size: 14px; line-height: 1.35; font-weight: 600; }
+.import-card .sub { display: block; margin-top: 2px; font-size: 11px; }
+.customer-order__heading { margin-top: 7px; }
+.customer-order__heading .section-title { margin-bottom: 8px; }
+.product-view-toggle { display: flex; padding: 4px; border: 1px solid var(--yg-line); border-radius: 9px; background: var(--yg-card); }
+.product-view-toggle text { padding: 7px 10px; border-radius: 6px; color: var(--yg-sub); font-size: 11px; }
+.product-view-toggle text.active { background: var(--yg-ink); color: #fff8e9; }
+.catalog-layout { display: flex; align-items: flex-start; gap: 7px; }
+.category-sidebar { position: sticky; top: 72px; z-index: 3; flex: 0 0 70px; overflow: hidden; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-paper-deep); }
+.category-sidebar__group + .category-sidebar__group { border-top: 1px solid var(--yg-line); }
+.category-sidebar__title { display: block; padding: 8px 5px 4px; color: #8b7d68; font-family: 'Songti SC', 'STSong', serif; font-size: 10px; letter-spacing: 1px; }
+.category-sidebar__item { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 48px; padding: 6px 4px; color: var(--yg-sub); text-align: center; font-size: 11px; line-height: 1.25; }
+.category-sidebar__item.active { background: var(--yg-card); color: var(--yg-ink); font-weight: 700; }
+.category-sidebar__item.active::before { position: absolute; top: 13px; bottom: 13px; left: 0; width: 4px; border-radius: 0 4px 4px 0; background: var(--yg-red); content: ''; }
+.category-sidebar__count { margin-top: 3px; color: #a99b84; font-size: 9px; font-weight: 400; }
+.category-sidebar__item.active .category-sidebar__count { color: var(--yg-red); }
+.product-list { flex: 1; min-width: 0; }
+.catalog-layout .product-card--list { gap: 8px; padding: 8px; }
+.catalog-layout .product-card--list .product-card__photo { width: 92px; height: 110px; }
+.catalog-layout .product-card--list .product-card__name { font-size: 13px; }
+.catalog-layout .product-card--list .product-card__meta { margin-top: 5px; font-size: 10px; }
+.catalog-layout .product-card--list .product-card__story-tag { display: none; }
+.catalog-layout .product-card--list .product-card__bottom { margin-top: 5px; }
+.catalog-layout .product-card--list .product-card__select { min-width: 56px; padding: 0 7px; font-size: 10px; line-height: 44px; }
+.product-list--grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+.product-list--grid .product-card__photo { height: 126px; }
+.product-list--grid .product-card__content { padding: 8px; }
+.catalog-empty { padding: 48px 12px; border: 1px dashed var(--yg-line); border-radius: 12px; color: var(--yg-sub); text-align: center; }
+.catalog-empty text { display: block; font-size: 12px; }
+.catalog-empty text + text { margin-top: 6px; font-size: 10px; }
+
+.cart-bar {
+  position: fixed;
+  z-index: 50;
+  right: 12px;
+  bottom: calc(58px + env(safe-area-inset-bottom));
+  left: 12px;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  padding: 6px 7px 6px 10px;
+  border: 1px solid #53695d;
+  border-radius: 12px;
+  background: var(--yg-ink);
+  color: #fff8e9;
+  box-shadow: 0 6px 18px rgba(35, 53, 46, .16);
+}
+.cart-bar__icon { position: relative; display: flex; flex: none; align-items: center; justify-content: center; width: 42px; height: 42px; border: 1px solid #c7a86d; border-radius: 50%; background: #f3e8d2; color: var(--yg-red); }
+.cart-bar__cart-glyph { font-family: 'Songti SC', 'STSong', serif; font-size: 17px; font-weight: 700; }
+.cart-bar__badge { position: absolute; top: -4px; right: -8px; min-width: 17px; padding: 1px 4px; border-radius: 12px; background: var(--yg-red); color: #fff; text-align: center; font-size: 9px; }
+.cart-bar__amount { display: block; margin-left: 13px; font-size: 16px; font-weight: 600; }
+.cart-bar__hint { display: block; margin: 2px 0 0 13px; color: #c8ccd1; font-size: 10px; }
+.cart-bar__go { display: flex; align-items: center; justify-content: center; min-width: 80px; min-height: 42px; margin-left: 8px; padding: 0 12px; border: 1px solid #c7a86d; border-radius: 8px; background: #f3e8d2; color: #352a1d; font-size: 13px; font-weight: 700; }
+
+.spec-sheet__gallery { display: flex; align-items: flex-end; justify-content: space-between; height: 230px; margin: 24px 0; padding: 18px; border-radius: 20px; background: linear-gradient(145deg, #bda889, #6f5d49); color: #fff; }
+.spec-sheet__gallery.dark { background: linear-gradient(145deg, #67696e, #1a1c20); }
+.spec-sheet__gallery.cream { background: linear-gradient(145deg, #f1e5ce, #b39a77); }
+.spec-sheet__gallery-wrap { position: relative; height: 320px; margin: 24px 0; overflow: hidden; border: 1px solid var(--yg-line); border-radius: 12px; background: #f3ecdf; }
+.spec-sheet__gallery-swiper { width: 100%; height: 100%; }
+.spec-sheet__gallery-swiper image { width: 100%; height: 100%; background: #f3ecdf; }
+.spec-sheet__gallery-tip { position: absolute; top: 14px; left: 14px; z-index: 2; padding: 6px 11px; border-radius: 16px; background: rgba(255, 255, 255, .9); color: #555b61; font-size: 10px; }
+.spec-sheet__save { position: absolute; top: 14px; right: 14px; z-index: 2; padding: 7px 13px; border-radius: 6px; background: rgba(35, 53, 46, .9); color: #fff8e9; font-size: 11px; }
+.spec-sheet__gallery-label { position: absolute; right: 16px; bottom: 14px; padding: 6px 12px; border-radius: 18px; background: rgba(0, 0, 0, .52); color: #fff; font-size: 11px; }
+.pattern-story-entry { margin: -8px 0 22px; padding: 16px 18px; border: 1px solid #9eb4aa; border-radius: 9px; background: #e8eee9; }
+.pattern-story-entry__title { display: block; font-family: 'Songti SC', 'STSong', serif; font-size: 14px; font-weight: 700; }
+.pattern-story-entry__sub { display: block; margin-top: 4px; color: var(--yg-sub); font-size: 10px; }
+.pattern-story-entry__go { flex: none; margin-left: 12px; color: var(--yg-ink-deep); font-size: 12px; font-weight: 600; }
+.spec-sheet__quantity { margin: 24px 0; }
+.quantity-step { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin: 0 14px; border: 1px solid var(--yg-line); border-radius: 8px; background: var(--yg-card); font-size: 20px; }
+.quantity-input { width: 64px; height: 40px; padding: 0 4px; border: 1px solid var(--yg-line); border-radius: 8px; background: var(--yg-card); text-align: center; font-size: 16px; }
+.link-sheet__input { height: 76px; margin: 24px 0; padding: 0 18px; border: 1px solid var(--yg-line); border-radius: 10px; background: var(--yg-card); font-size: 14px; }
+.link-sheet .ghost-btn { margin-bottom: 12px; }
+.import-progress { text-align: center; }
+.import-progress__icon { display: flex; align-items: center; justify-content: center; width: 74px; height: 74px; margin: 28px auto 18px; border-radius: 50%; background: #e8eee9; color: var(--yg-ink); font-size: 24px; font-weight: 700; }
+.import-progress__icon.failed { background: #f8e5e1; color: var(--yg-red); }
+.import-progress__message { display: block; font-size: 15px; font-weight: 600; }
+.import-progress__bar { height: 7px; margin: 20px 0 12px; overflow: hidden; border-radius: 8px; background: #e5ded1; }
+.import-progress__bar view { height: 100%; border-radius: 8px; background: var(--yg-ink); transition: width .25s ease; }
+.import-progress__tip { display: block; margin: 18px 0; }

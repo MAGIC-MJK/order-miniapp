@@ -1,0 +1,6 @@
+{
+  "$schema": "https://static.cloudbase.net/cli/cloudbaserc.schema.json",
+  "envId": "YOUR_CLOUD_ENV_ID",
+  "functionRoot": "cloudfunctions",
+  "functions": [{ "name": "api", "timeout": 300, "runtime": "Nodejs20.19", "handler": "index.main" }]
+}

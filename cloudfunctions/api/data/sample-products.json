@@ -1,0 +1,5 @@
+[
+  {"code":"607","name":"示例直筒裤","basePriceCents":6500,"colors":["白色","黑色"],"sizes":["XL","2XL","3XL","4XL"],"referenceTotal":0,"tone":"sand","status":"sale","images":[]},
+  {"code":"606","name":"示例阔腿裤","basePriceCents":4000,"colors":["白色","黑色"],"sizes":["XL","2XL","3XL","4XL"],"referenceTotal":0,"tone":"cream","status":"sale","images":[]},
+  {"code":"605","name":"示例休闲裤","basePriceCents":6500,"colors":["白色","黑色"],"sizes":["XL","2XL","3XL","4XL"],"referenceTotal":0,"tone":"dark","status":"sale","images":[]}
+]

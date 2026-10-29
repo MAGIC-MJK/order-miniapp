@@ -1,0 +1,11 @@
+.register-intro .sub { display: block; margin-top: 8px; }
+.register-field { padding: 18px 0; border-bottom: 1px solid var(--yg-line); }
+.register-field:last-child { border-bottom: 0; }
+.register-field > text { display: block; margin-bottom: 8px; font-weight: 600; }
+.register-field input { height: 48px; font-size: 14px; }
+.register-form { border-top: 4px solid var(--yg-red); }
+.register-agreement { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 10px; margin: 22px 4px; }
+.register-agreement > text:first-child { flex: none; font-size: 18px; line-height: 22px; }
+.register-agreement__link { color: #0f513c; }
+.register-tip { display: block; margin-top: 14px; text-align: center; }
+.register-phone-button { width: auto; margin: 0; padding: 0 12px; border: 1px solid var(--yg-line); border-radius: 8px; background: var(--yg-paper-deep); color: var(--yg-ink); font-size: 11px; line-height: 34px; }

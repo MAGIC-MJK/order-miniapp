@@ -1,0 +1,10 @@
+{
+  "name": "order-cloud-api",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "wx-server-sdk": "4.0.2"
+  }
+}
